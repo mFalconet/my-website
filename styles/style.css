@@ -1,0 +1,111 @@
+/* body {
+  background-color: #f8f9fa;
+} */
+
+.container {
+  padding: 0;
+  /* width: 90%; */
+}
+
+.navbar {
+  max-width: 2000px;
+  height: 10vh;
+  min-height: 60px;
+  letter-spacing: 2.2px;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.logo {
+  font-family: "Corinthia";
+  font-size: 1.5rem;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 30px;
+  border-radius: 50%;
+  /* border: 1px solid #c10000; */
+  border: 1px solid #000;
+  padding: 1px;
+}
+
+.navbar-collapse {
+  display: flex;
+  justify-content: flex-end;
+  letter-spacing: 2.2px;
+}
+
+.navbar .nav-link {
+  text-transform: uppercase;
+  background-color: #f8f9fa;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.navbar .nav-link.active {
+  color: #c10000;
+  /* color: #006680; */
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+.navbar ul {
+  box-shadow: var(--bs-box-shadow);
+}
+
+.contact {
+  border-radius: 10px;
+}
+
+.foot {
+  height: 10vh;
+  min-height: 60px;
+  width: 100%;
+  background-color: #edeef0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  bottom: 0;
+}
+
+@media (min-width: 2000px) {
+  .foot {
+    justify-content: space-around;
+  }
+}
+
+/* add border and shadow to the contact button when the menu collapse (works in reverse)*/
+@media (min-width: 768px) {
+  .logo img {
+    height: 60px;
+    padding: 2px;
+  }
+
+  .contact {
+    margin-left: 1.5rem !important;
+    box-shadow: var(--bs-box-shadow) !important;
+    border: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;
+  }
+
+  .navbar ul {
+    box-shadow: none !important;
+  }
+  .navbar .nav-link {
+    background-color: transparent;
+  }
+
+  .foot {
+    position: absolute;
+    bottom: 0;
+  }
+}
