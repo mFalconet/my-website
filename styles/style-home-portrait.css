@@ -1,7 +1,7 @@
 @media (orientation: portrait) {
   /* body {
-      background-color: #c10000;
-    } */
+    background-color: #534949;
+  } */
 
   html {
     font-size: 18pt;
@@ -18,6 +18,7 @@
   .foot {
     padding-left: 15px !important;
     padding-right: 15px !important;
+    margin-top: 1rem !important;
   }
 
   h1 {
@@ -50,6 +51,110 @@
     align-items: flex-start;
   }
 
+  /* MINIMUM HEIGHTS */
+  /* Set the body and main minimum heights to avoid clashes of items */
+  /* @media (max-width: 494px) {
+    body {
+      min-width: 375px !important;
+    }
+
+    main {
+      min-height: 464px !important;
+    }
+
+    .home-grid {
+      min-height: 450px !important;
+    }
+
+    @media (max-height: 666px) {
+      body {
+        min-height: 666px !important;
+      }
+    }
+  } */
+
+  @media (max-width: 494px) {
+    main {
+      min-height: 500px !important;
+    }
+
+    .home-grid {
+      min-height: 485px !important;
+    }
+
+    @media (max-height: 766px) {
+      body {
+        min-height: 766px !important;
+      }
+    }
+  }
+
+  @media (min-width: 495px) {
+    main {
+      min-height: 528px !important;
+    }
+
+    .home-grid {
+      min-height: 520px !important;
+    }
+
+    @media (max-height: 760px) {
+      body {
+        min-height: 760px !important;
+      }
+    }
+  }
+
+  @media (min-width: 604px) {
+    main {
+      min-height: 580px !important;
+    }
+
+    .home-grid {
+      min-height: 580px !important;
+    }
+
+    @media (max-height: 860px) {
+      body {
+        min-height: 860px !important;
+      }
+    }
+  }
+
+  @media (min-width: 768px) {
+    main {
+      min-height: 691px !important;
+    }
+
+    .home-grid {
+      min-height: 691px !important;
+    }
+
+    @media (max-height: 970px) {
+      body {
+        min-height: 970px !important;
+      }
+    }
+  }
+
+  @media (min-width: 992px) {
+    main {
+      min-height: 770px !important;
+    }
+
+    .home-grid {
+      min-height: 770px !important;
+    }
+
+    @media (max-height: 1112px) {
+      body {
+        min-height: 1112px !important;
+      }
+    }
+  }
+
+  /* END OF MIN HEIGHTS */
+
   @media (max-width: 1199px) {
     html {
       font-size: 18pt;
@@ -64,10 +169,6 @@
       padding-left: 0.5rem !important;
       padding-right: 0.5rem !important;
       font-size: 0.9rem !important;
-    }
-
-    main {
-      min-height: 776px !important;
     }
 
     h1 {
@@ -101,22 +202,18 @@
     }
   }
 
-  @media (max-height: 1030px) {
-    .foot {
-      margin-top: 1rem !important;
-      position: relative;
-      bottom: 0;
-    }
-  }
-
   @media (max-width: 767px) {
     .logo img {
       padding: 2px;
     }
 
+    .contact {
+      margin-left: 0 !important;
+    }
+
     main {
       max-width: 765px !important;
-      /* min-height: 500px !important; */
+      align-items: flex-start;
     }
 
     body {
@@ -132,22 +229,6 @@
     .home-title {
       padding-top: 0 !important;
     }
-
-    /* Height based query to fix the footer */
-    @media (max-height: 1090px) {
-      .foot {
-        margin-top: 1rem !important;
-        position: absolute;
-        bottom: 0;
-      }
-    }
-
-    @media (max-height: 1030px) {
-      .foot {
-        position: absolute;
-        bottom: 0;
-      }
-    }
   }
 
   @media (max-width: 603px) {
@@ -158,12 +239,9 @@
     .home-grid {
       grid-template-columns: 60% 40%;
     }
-  }
 
-  @media (max-height: 888px) {
-    .foot {
-      position: relative;
-      bottom: 0;
+    .title-span {
+      text-underline-offset: 6px;
     }
   }
 
@@ -176,19 +254,13 @@
       height: 60px;
     }
 
-    .foot {
-      position: relative;
-      bottom: 0;
-    }
-
     main {
       align-items: flex-start;
-      position: relative;
     }
 
     .home-grid {
-      grid-template-columns: 100%;
-      grid-template-rows: repeat (3, auto);
+      grid-template-columns: auto;
+      grid-template-rows: auto auto minmax(120px, 1fr);
     }
 
     .home-title {
@@ -197,14 +269,18 @@
 
     .home-text {
       grid-area: 2/1/3/2;
+      padding-bottom: 0 !important;
     }
 
     .home-picture {
       grid-area: 3/1/-1/2;
+      min-height: 220px !important;
     }
 
     .home-picture img {
-      height: 80%;
+      min-height: 120px !important;
+      min-height: 220px !important;
+      min-width: 90px !important;
     }
   }
 
