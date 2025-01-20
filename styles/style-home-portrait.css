@@ -1,0 +1,217 @@
+@media (orientation: portrait) {
+  /* body {
+      background-color: #c10000;
+    } */
+
+  html {
+    font-size: 18pt;
+  }
+
+  .logo {
+    color: transparent;
+  }
+
+  .logo img {
+    height: 75px;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .home-grid {
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto;
+  }
+
+  .home-title {
+    grid-area: 1/1/2/2;
+    justify-content: center;
+  }
+
+  .home-text {
+    grid-area: 2/1/-1/-1;
+    padding-bottom: 1rem !important;
+  }
+
+  .home-picture {
+    grid-area: 1/2/2/-1;
+    align-items: flex-start;
+  }
+
+  @media (max-width: 1199px) {
+    html {
+      font-size: 18pt;
+    }
+
+    .navbar {
+      padding-left: 2rem !important;
+      padding-right: 2rem !important;
+    }
+
+    .navbar .nav-link {
+      padding-left: 0.5rem !important;
+      padding-right: 0.5rem !important;
+      font-size: 0.9rem !important;
+    }
+
+    main {
+      min-height: 776px !important;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+    }
+
+    .over-heading {
+      font-size: 1.7rem;
+    }
+  }
+
+  @media (max-width: 991px) {
+    html {
+      font-size: 16pt;
+    }
+
+    h1 {
+      font-size: 2.3rem;
+    }
+
+    .over-heading {
+      font-size: 1.2rem;
+    }
+
+    .home-grid {
+      padding: 11px !important;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .contact {
+      margin-left: 0.5rem !important;
+    }
+  }
+
+  @media (max-height: 1030px) {
+    .foot {
+      margin-top: 1rem !important;
+      position: relative;
+      bottom: 0;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .logo img {
+      padding: 2px;
+    }
+
+    main {
+      max-width: 765px !important;
+      /* min-height: 500px !important; */
+    }
+
+    body {
+      background-color: #f8f9fa;
+    }
+
+    .home-grid {
+      border-radius: 0;
+      box-shadow: none !important;
+      grid-template-columns: 60% 40%;
+    }
+
+    .home-title {
+      padding-top: 0 !important;
+    }
+
+    /* Height based query to fix the footer */
+    @media (max-height: 1090px) {
+      .foot {
+        margin-top: 1rem !important;
+        position: absolute;
+        bottom: 0;
+      }
+    }
+
+    @media (max-height: 1030px) {
+      .foot {
+        position: absolute;
+        bottom: 0;
+      }
+    }
+  }
+
+  @media (max-width: 603px) {
+    html {
+      font-size: 16px;
+    }
+
+    .home-grid {
+      grid-template-columns: 60% 40%;
+    }
+  }
+
+  @media (max-height: 888px) {
+    .foot {
+      position: relative;
+      bottom: 0;
+    }
+  }
+
+  @media (max-width: 494px) {
+    html {
+      font-size: 14px;
+    }
+
+    .logo img {
+      height: 60px;
+    }
+
+    .foot {
+      position: relative;
+      bottom: 0;
+    }
+
+    main {
+      align-items: flex-start;
+      position: relative;
+    }
+
+    .home-grid {
+      grid-template-columns: 100%;
+      grid-template-rows: repeat (3, auto);
+    }
+
+    .home-title {
+      grid-area: 1/1/2/2;
+    }
+
+    .home-text {
+      grid-area: 2/1/3/2;
+    }
+
+    .home-picture {
+      grid-area: 3/1/-1/2;
+    }
+
+    .home-picture img {
+      height: 80%;
+    }
+  }
+
+  @media (max-width: 405px) {
+    .foot {
+      font-size: 8pt;
+    }
+
+    .foot img {
+      height: 20px;
+    }
+  }
+}
