@@ -74,6 +74,10 @@
   } */
 
   @media (max-width: 494px) {
+    body {
+      min-width: 375px !important;
+    }
+
     main {
       min-height: 500px !important;
     }
@@ -82,9 +86,9 @@
       min-height: 485px !important;
     }
 
-    @media (max-height: 766px) {
+    @media (max-height: 800px) {
       body {
-        min-height: 766px !important;
+        min-height: 800px !important;
       }
     }
   }
