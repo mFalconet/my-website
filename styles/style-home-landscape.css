@@ -30,10 +30,6 @@
     .over-heading {
       font-size: 1.5rem;
     }
-
-    .title-span {
-      text-underline-offset: 6px;
-    }
   }
 
   @media (max-height: 590px) {
@@ -48,10 +44,6 @@
     .over-heading {
       font-size: 1.3rem;
     }
-
-    .title-span {
-      text-underline-offset: 3px;
-    }
   }
 
   @media (max-height: 480px) {
@@ -61,17 +53,13 @@
     }
   }
 
-  @media (max-width: 992px) {
+  @media (max-width: 991px) {
     html {
       font-size: 8pt;
     }
-
-    .title-span {
-      text-underline-offset: 6px;
-    }
   }
 
-  @media (max-width: 767px) {
+  @media (max-width: 770px) {
     h1 {
       font-size: 2.5rem;
     }
@@ -79,16 +67,6 @@
     .over-heading {
       font-size: 1.5rem;
     }
-
-    .title-span {
-      text-underline-offset: 4px;
-    }
-
-    /* @media (max-height:) */
-    /* .foot {
-      position: relative;
-      bottom: 0;
-    } */
   }
 
   @media (max-width: 575px) {
