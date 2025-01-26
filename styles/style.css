@@ -2,6 +2,10 @@
   background-color: #f8f9fa;
 } */
 
+body {
+  position: relative;
+}
+
 .container {
   padding: 0;
   /* width: 90%; */
@@ -75,7 +79,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  position: relative;
+  position: absolute;
   bottom: 0;
 }
 
@@ -109,10 +113,5 @@
   }
   .navbar .nav-link {
     background-color: transparent;
-  }
-
-  .foot {
-    position: absolute;
-    bottom: 0;
   }
 }
